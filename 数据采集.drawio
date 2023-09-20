@@ -1,9 +1,79 @@
-<mxfile host="app.diagrams.net" modified="2023-09-20T05:29:35.745Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15" version="21.7.5" etag="nfvE3bmT6boy_Jhf0pI7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-20T06:06:07.175Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15" etag="pVnU-n2iUnXq0P9wLZ6P" version="21.7.5" type="github">
   <diagram name="第 1 页" id="SJoeqEY9U11E6IzgD9cu">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="1774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-5" value="分布式存储/本地磁盘" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-490" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="m0xNd0HV5kPVLvJwR-Vi-8" target="m0xNd0HV5kPVLvJwR-Vi-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-8" value="文件采集程序" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-490" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="m0xNd0HV5kPVLvJwR-Vi-9" target="m0xNd0HV5kPVLvJwR-Vi-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-43" value="本地文件读取" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m0xNd0HV5kPVLvJwR-Vi-42">
+          <mxGeometry x="0.2308" y="2" relative="1" as="geometry">
+            <mxPoint x="-10" y="32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-9" value="本地文件系统接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="-413" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m0xNd0HV5kPVLvJwR-Vi-10" target="m0xNd0HV5kPVLvJwR-Vi-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-10" value="Fuse操作转换" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="-480" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="m0xNd0HV5kPVLvJwR-Vi-11" target="m0xNd0HV5kPVLvJwR-Vi-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-40" value="文件数据流" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m0xNd0HV5kPVLvJwR-Vi-39">
+          <mxGeometry x="0.0667" y="3" relative="1" as="geometry">
+            <mxPoint x="-3" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-11" value="&lt;p style=&quot;margin: 0pt 0pt 0.0001pt; font-family: Calibri; font-size: 10.5pt;&quot; class=&quot;MsoNormal&quot;&gt;&lt;font face=&quot;Calibri&quot;&gt;FTP&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0pt 0pt 0.0001pt; font-family: Calibri; font-size: 10.5pt;&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: 宋体; font-size: 10.5pt;&quot;&gt;&lt;font face=&quot;Calibri&quot;&gt;SFTP&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0pt 0pt 0.0001pt; font-family: Calibri; font-size: 10.5pt;&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: 宋体; font-size: 10.5pt;&quot;&gt;&lt;font face=&quot;Calibri&quot;&gt;SAMBA&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0pt 0pt 0.0001pt; font-family: Calibri; font-size: 10.5pt;&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-family: 宋体; font-size: 10.5pt;&quot;&gt;&lt;font face=&quot;Calibri&quot;&gt;We&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; font-size: 10.5pt;&quot;&gt;&lt;font face=&quot;Calibri&quot;&gt;bDAV&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0pt 0pt 0.0001pt; font-family: Calibri; font-size: 10.5pt;&quot; class=&quot;MsoNormal&quot;&gt;等远程文件服务&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-530" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-12" value="Redis 消息队列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-600" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="m0xNd0HV5kPVLvJwR-Vi-13" target="m0xNd0HV5kPVLvJwR-Vi-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-13" value="数据包还原为网络流" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-600" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="m0xNd0HV5kPVLvJwR-Vi-14" target="m0xNd0HV5kPVLvJwR-Vi-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-14" value="无锁环形队列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="-680" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="m0xNd0HV5kPVLvJwR-Vi-15" target="m0xNd0HV5kPVLvJwR-Vi-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-15" value="支持DPDK的网卡" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-600" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="m0xNd0HV5kPVLvJwR-Vi-16" target="m0xNd0HV5kPVLvJwR-Vi-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-16" value="交换机镜像流量" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-680" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-49" value="网络流量采集出口" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="-650" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m0xNd0HV5kPVLvJwR-Vi-50" value="远程文件采集出口" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="-440" width="120" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
